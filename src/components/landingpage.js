@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Cell, Footer, FooterSection, FooterLinkList } from 'react-mdl'
+import { Grid, Cell, Footer, FooterSection } from 'react-mdl'
 import logo from '../assets/imgs/myAvatar.png'
 import section from '../assets/imgs/section1.jpg'
 
@@ -35,9 +35,9 @@ class Landing extends Component {
                         </div>
                     </Cell>
                 </Grid>
-                <section className="section1" style={{ background: 'url(' + section + ') no-repeat' }}>
+                <section className="section1" name="aboutme_scroll" id="aboutme_scroll" style={{ background: 'url(' + section + ') no-repeat' }}>
                     <div className="overlay">
-                        <section className="aboutme" id="aboutme">
+                        <section className="aboutme">
                             <div>
                                 <h2 style={{ textAlign: 'center' }}>
                                     About Me
