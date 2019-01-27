@@ -11,6 +11,17 @@
   text-align: center;
 }
 
+.mdl-layout__header-row {
+  justify-content: space-between;
+}
+
+.mdl-layout__header-row .header-home {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .avatar-img {
   height: 250px;
   border-radius: 50%;
@@ -158,7 +169,16 @@
 /* Media queries for phone screen */
 @media (max-width: 756px) {
   .contact-body .mdl-card {
-    width: 100% !important;
+    width: 96% !important;
+    margin-bottom: 50px !important;
+  }
+
+  .contact-body .mdl-grid {
+    padding: 0;
+  }
+
+  .contact-list .contact-item {
+    font-size: 20px !important;
   }
 
   .contact-list i {

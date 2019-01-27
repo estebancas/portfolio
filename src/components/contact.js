@@ -28,21 +28,21 @@ class Contact extends Component {
                             <div className="contact-list">
                                 <List>
                                     <ListItem>
-                                        <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+                                        <ListItemContent className="contact-item" style={{ fontSize: '25px', fontFamily: 'Anton' }}>
                                             <i className="fas fa-phone-square" aria-hidden="true" />
                                             (506) 89093178
                                     </ListItemContent>
                                     </ListItem>
 
                                     <ListItem>
-                                        <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+                                        <ListItemContent className="contact-item" style={{ fontSize: '25px', fontFamily: 'Anton' }}>
                                             <i className="fas fa-envelope-square" aria-hidden="true" />
                                             estcascor94@gmail.com
                                     </ListItemContent>
                                     </ListItem>
 
                                     <ListItem>
-                                        <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+                                        <ListItemContent className="contact-item" style={{ fontSize: '25px', fontFamily: 'Anton' }}>
                                             <i className="fab fa-skype" aria-hidden="true" />
                                             estcascor94@hotmail.com
                                     </ListItemContent>

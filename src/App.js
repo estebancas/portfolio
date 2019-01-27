@@ -9,7 +9,8 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title="Esteban Castro" scroll>
+          <Header className="header-color" title="" scroll>
+            <Link className="header-home" to="/">Esteban Castro</Link>
             <Navigation>
               {/* <Link to="/resume">Resume</Link> */}
               <a href="https://resume.io/r/ce3Y5JlPM" rel="noopener noreferrer" target="_blank">Resume</a>
