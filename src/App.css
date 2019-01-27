@@ -1,32 +1,192 @@
-.App {
+.header-color {
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.avatar-img {
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 9em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  margin: auto;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 206px;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-text p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links a {
+  cursor: pointer;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px 20px;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+.projects-grid .projects-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-grid .mdl-card__supporting-text {
+  min-height: 73px;
+}
+
+.contact-body {
+  margin: auto;
+  /* position: fixed;
+  width: 100%;
+  height: 100%; */
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 40px;
+  padding-right: 3rem;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background: #c31432 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.aboutme {
+  height: 400px;
+  padding: 60px;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme div {
+  width: 75%;
+}
+
+.aboutme div p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.aboutme div hr {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.aboutme div ul {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Media queries for phone screen */
+@media (max-width: 756px) {
+  .contact-body .mdl-card {
+    width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact-list i {
+    font-size: 20px;
+    padding-right: 1rem;
+  }
+
+  .projects-grid {
+    flex-flow: column;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 40px;
+  }
+
+  .aboutme {
+    height: unset;
+  }
+
+  .aboutme div {
+    width: 100%;
+  }
+
+  .aboutme div hr {
+    width: 55%;
   }
 }
